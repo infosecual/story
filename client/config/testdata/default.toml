@@ -91,6 +91,8 @@ idle-timeout = 10
 # MaxHeaderBytes defines the API server max header (in bytes).
 max-header-bytes = 8192
 
+with-comet = true
+
 #######################################################################
 ###                         Logging Options                         ###
 #######################################################################
