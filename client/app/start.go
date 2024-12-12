@@ -147,9 +147,6 @@ func Start(ctx context.Context, cfg Config) (func(context.Context) error, error)
 		cmtAPI := comet.NewAPI(rpcClient, app.ChainID())
 
 		app.SetCometAPI(cmtAPI)
-	rpcClient := rpclocal.New(cmtNode)
-	cmtAPI := comet.NewAPI(rpcClient, app.ChainID())
-	app.SetCometAPI(cmtAPI)
 
 		log.Info(ctx, "Starting CometBFT", "listeners", n.Listeners())
 	}
